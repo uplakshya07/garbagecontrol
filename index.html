@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <form action="https://formspree.io/f/moqyzedv" method="POST" id="my-form">
+
+        <div class="form-group">
+          <label for="reporter-name">Enter your name: </label><br>
+          <input type="text" name="reporter-name" id="reporter-name"><br>
+        </div>
+
+        <div class="form-group">
+          <label for="reported-place">Enter the place name where the garbage is thrown: </label><br>
+          <input type="text" name="reported-place" id="reported-place" required><br>
+        </div>
+
+        <div class="form-group">
+          <label for="accused-person">Enter the name of the person responsible for garbage: </label><br>
+          <input type="text" name="accused-person" id="accused-person"><br>
+        </div>
+
+        <!-- <div class="form-group">
+              <label for="proof">Provide photo(s) and/or video(s) of garbage: </label><br>
+                <input type="file" name="proof" id="proof" multiple accept="image/*, video/*" required><br>
+            </div> -->
+
+        <div class="form-group">
+          <label for="urlLocation">Enter the location of the place where the garbage is thrown:
+            <br>Google Map url: </label>
+          <input type="url" name="location" id="urlLocation"><br>
+        </div>
+
+        <div class="form-group">
+          <label for="reporter-email">Enter your email address: </label><br>
+          <input type="email" name="email" id="reporter-email"><br>
+        </div>
+
+        <div class="form-group">
+          <label for="reporter-mobile">Enter your mobile number: </label><br>
+          <input type="number" name="reporter-mobile" id="reporter-mobile" required><br>
+        </div>
+
+        <div class="form-group">
+          <label for="reporter-message">Additional details: </label><br>
+          <textarea name="reporter-message" id="reporter-message" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+
+  <section>
+    <div class="container">
+      <a href="locate.html" target="_blank" rel="noopener oreferrer">Get Your Current Location</a>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
